@@ -33,7 +33,7 @@
       shell: "sudo docker pull {{ default_container_image }}:{{DOCKER_TAG}}"
 
     - name: Create default containers
-      shell: sudo docker run -d -p 8080:8080 --name {{ default_container_name }}" -v "/var/run/docker.sock:/var/run/docker.sock" "{{ default_container_image }}:{{DOCKER_TAG}}"
+      shell: "sudo docker run -d -p 8080:8080 --name {{ default_container_name }} -v '/var/run/docker.sock:/var/run/docker.sock' {{ default_container_image }}:{{DOCKER_TAG}}"
     # Creates the number of containers defined by the variable create_containers, using values from vars file
 #   - name: Create default containers
 #      docker_container:
