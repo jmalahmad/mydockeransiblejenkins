@@ -1,6 +1,7 @@
 ---
 - hosts: dev
   become: True
+  sudo_user: admin
   tasks:
     - name: Install python pip
       yum:
