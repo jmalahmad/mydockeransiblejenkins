@@ -1,2 +1,2 @@
 [dev]
-172.18.0.22 ansible_user=root
+172.18.0.22 ansible_user=admin
