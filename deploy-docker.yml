@@ -1,6 +1,5 @@
 ---
 - hosts: dev
-  become_user: admin
   become: True
   tasks:
     - name: Install python pip
