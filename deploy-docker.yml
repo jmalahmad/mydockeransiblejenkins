@@ -41,4 +41,4 @@
         image: "{{ default_container_image }}:{{DOCKER_TAG}}"
         state: present
         published_ports:
-          - 172.180.0.22:8080:8080
+          - 0.0.0.0:8080:8080
