@@ -33,13 +33,13 @@
       shell: "sudo docker pull {{ default_container_image }}:{{DOCKER_TAG}}"
 
     # Creates the number of containers defined by the variable create_containers, using values from vars file
-    - name: Create default containers
-      docker_container:
-        name: "{{ default_container_name }}"
-        image: "{{ default_container_image }}:{{DOCKER_TAG}}"
-        state: present
-        published_ports:
-          - 0.0.0.0:8080:8080
+#    - name: Create default containers
+#      docker_container:
+#        name: "{{ default_container_name }}"
+#        image: "{{ default_container_image }}:{{DOCKER_TAG}}"
+#        state: present
+#        published_ports:
+#          - 0.0.0.0:8080:8080
     - name: Restart a container
       docker_container:
         name: "{{ default_container_name }}"
