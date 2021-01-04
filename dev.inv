@@ -1,2 +1,2 @@
 [dev]
-172.18.0.22 ansible_user=admin ansible_password=admin
+172.18.0.22 ansible_user=admin ansible_password=admin ansible_sudo_pass=admin
