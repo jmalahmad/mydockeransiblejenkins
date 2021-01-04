@@ -30,7 +30,7 @@
         name: docker
 
     - name: Pull default Docker image
-      shell: "docker pull {{ default_container_image }}:{{DOCKER_TAG}}"
+      shell: "sudo docker pull {{ default_container_image }}:{{DOCKER_TAG}}"
 
     # Creates the number of containers defined by the variable create_containers, using values from vars file
     - name: Create default containers
