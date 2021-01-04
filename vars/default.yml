@@ -1,4 +1,4 @@
 ---
 
 default_container_name: docker_created_by_ansible
-default_container_image: jmlhmd/dockerfile:{{DOCKER_TAG}}
+default_container_image: jmlhmd/dockerfile
