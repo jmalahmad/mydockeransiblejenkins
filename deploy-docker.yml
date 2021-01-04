@@ -37,7 +37,6 @@
       docker_container:
         name: "{{ default_container_name }}"
         image: "{{ default_container_image }}:{{DOCKER_TAG}}"
-        command: "{{ default_container_command }}"
         state: present
         published_ports:
           - 0.0.0.0:8080:8080
